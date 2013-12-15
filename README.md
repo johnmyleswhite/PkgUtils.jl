@@ -11,3 +11,9 @@ Build a simplified search engine service:
 
 	using PkgUtils
 	PkgUtils.runservice()
+
+Run a search website:
+
+	cd .julia/PkgUtils
+	julia scripts/server.jl
+	open site/index.html

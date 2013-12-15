@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Julia Package Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- AJAX methods -->
+    <script src="js/search.js"></script>
+
+    <link href="css/custom.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h4>Julia Package Search</h1>
+      </diV>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <form onsubmit="getSearchResults(); return false;">
+          <div class="input-group">
+            <input type="text"
+                   name="query"
+                   id="query"
+                   class="form-control"
+                   placeholder="Enter keywords" />
+            <span class="input-group-btn">
+              <button type="button"
+                      class="btn btn-primary"
+                      onclick="getSearchResults();" />
+                Search Packages
+              </button>
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <table class="table table-hover table-striped table-bordered"
+               id="search">
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
